@@ -14,7 +14,7 @@
         </main>
         {% include 'footer.njk' %}
         <script>
-            if (window.netlifyIdentity.on("Init", user => {
+            if (window.netlifyIdentity.on("init", user => {
                 if (!user) {
                     window.netlifyIdentity.on("login", () => {
                         document.location.href = "/admin/";
